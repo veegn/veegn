@@ -29,29 +29,33 @@
     var CONFIG = {"hostname":"veegn.me","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="VEEGN&#96;S BLOG">
-<meta property="og:url" content="http://veegn.me/index.html">
+  <meta name="description" content="Arthas使用实战">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Arthas in Action(Arthas实战)">
+<meta property="og:url" content="http://veegn.me/2021/06/30/arthas-in-action/index.html">
 <meta property="og:site_name" content="VEEGN&#96;S BLOG">
+<meta property="og:description" content="Arthas使用实战">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-06-30T15:03:03.000Z">
+<meta property="article:modified_time" content="2021-06-30T15:04:54.485Z">
 <meta property="article:author" content="veegn">
-<meta property="article:tag" content="veegn,java">
+<meta property="article:tag" content="tools,arthas,test">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://veegn.me/">
+<link rel="canonical" href="http://veegn.me/2021/06/30/arthas-in-action/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>VEEGN`S BLOG</title>
+  <title>Arthas in Action(Arthas实战) | VEEGN`S BLOG</title>
   
 
 
@@ -149,9 +153,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -167,10 +172,9 @@
       <meta itemprop="name" content="VEEGN`S BLOG">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/30/arthas-in-action/" class="post-title-link" itemprop="url">Arthas in Action(Arthas实战)</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Arthas in Action(Arthas实战)
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -194,86 +198,34 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="Arthas使用实战"><a href="#Arthas使用实战" class="headerlink" title="Arthas使用实战"></a>Arthas使用实战</h1>
-      
+        <h1 id="Arthas使用实战"><a href="#Arthas使用实战" class="headerlink" title="Arthas使用实战"></a>Arthas使用实战</h1>
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+          <div class="post-tags">
+              <a href="/tags/tools-arthas-test/" rel="tag"># tools,arthas,test</a>
+          </div>
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://veegn.me/2021/06/29/hello-world/">
+        
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="veegn">
-      <meta itemprop="description" content="">
-    </span>
 
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="VEEGN`S BLOG">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/29/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-06-29 21:44:23" itemprop="dateCreated datePublished" datetime="2021-06-29T21:44:23+08:00">2021-06-29</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-30 00:11:29" itemprop="dateModified" datetime="2021-06-30T00:11:29+08:00">2021-06-30</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="什么也没有"><a href="#什么也没有" class="headerlink" title="什么也没有"></a>什么也没有</h1>
-      
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/06/29/hello-world/" rel="prev" title="Hello World">
+      <i class="fa fa-chevron-left"></i> Hello World
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
@@ -326,6 +278,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Arthas%E4%BD%BF%E7%94%A8%E5%AE%9E%E6%88%98"><span class="nav-number">1.</span> <span class="nav-text">Arthas使用实战</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
