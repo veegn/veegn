@@ -1,5 +1,5 @@
 ---
-title: 第 1 章 AI Agent 入门（转载）
+title: 深入理解 AI Agent：设计原理与工程实践-第一章：AI Agent 入门（转载）
 date: 2026-08-25 16:31:00
 tags:
   - AI Agent

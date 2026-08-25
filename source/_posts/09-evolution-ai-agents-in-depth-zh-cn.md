@@ -1,5 +1,5 @@
 ---
-title: 第 9 章 Agent 的持续进化（转载）
+title: 深入理解 AI Agent：设计原理与工程实践-第九章：Agent 的持续进化（转载）
 date: 2026-08-25 16:39:00
 tags:
   - AI Agent

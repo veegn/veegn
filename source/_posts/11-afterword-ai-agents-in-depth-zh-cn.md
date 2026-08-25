@@ -1,5 +1,5 @@
 ---
-title: 后记：回到 Agent = LLM + 上下文 + 工具（转载）
+title: 深入理解 AI Agent：设计原理与工程实践-后记：回到 Agent = LLM + 上下文 + 工具（转载）
 date: 2026-08-25 16:41:00
 tags:
   - AI Agent

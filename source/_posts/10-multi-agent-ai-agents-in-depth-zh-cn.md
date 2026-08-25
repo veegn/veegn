@@ -1,5 +1,5 @@
 ---
-title: 第 10 章 多 Agent 协作（转载）
+title: 深入理解 AI Agent：设计原理与工程实践-第十章：多 Agent 协作（转载）
 date: 2026-08-25 16:40:00
 tags:
   - AI Agent

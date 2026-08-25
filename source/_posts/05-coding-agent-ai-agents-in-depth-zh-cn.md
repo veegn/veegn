@@ -1,5 +1,5 @@
 ---
-title: 第 5 章 Coding Agent 与通用 Agent（转载）
+title: 深入理解 AI Agent：设计原理与工程实践-第五章：Coding Agent 与通用 Agent（转载）
 date: 2026-08-25 16:35:00
 tags:
   - AI Agent
