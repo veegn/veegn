@@ -276,7 +276,7 @@ RL 后训练再用外部奖励教会 LLM 在特定任务中更有效地利用这
 > **实验 8-2 ★★：传统 RL 与 LLM Agent 的对比研究**
 >
 >
-> ![图8-7 Q-learning 与 LLM Agent 在寻宝游戏中的架构对比](/images/ai-agents-in-depth/fig8-7.svg)
+![图8-7 Q-learning 与 LLM Agent 在寻宝游戏中的架构对比](/images/ai-agents-in-depth/fig8-7.svg)
 >
 >
 > 在同一个寻宝游戏中对比 Q-learning 与 LLM Agent（Kimi K3，维护最多 50 条经验的缓冲区）。结果令人震撼：**LLM Agent 第一局就在 18 步内通关**。
@@ -307,7 +307,7 @@ RL 后训练再用外部奖励教会 LLM 在特定任务中更有效地利用这
 > **实验 8-4 ★★：自己训练 VLM**
 >
 >
-> ![图8-9 视觉语言模型（VLM）架构](/images/ai-agents-in-depth/fig8-9.svg)
+![图8-9 视觉语言模型（VLM）架构](/images/ai-agents-in-depth/fig8-9.svg)
 >
 >
 > VLM 将视觉感知与语言理解统一在一个模型中，核心挑战在于跨模态对齐——让“看到的”和“说出来的”对应起来。架构由三个组件构成：**视觉编码器**（如 CLIP，参数固定）提取图像的语义特征；**投影层**（轻量级，唯一从头训练的部分）充当视觉特征与语言模型之间的“翻译官”，将视觉特征映射到语言模型能理解的表示空间；**语言模型**生成描述文本。训练采用“冻结 LLM + 只训练投影层”的策略，以避免灾难性遗忘（Catastrophic Forgetting，即学了新技能后把旧技能忘了）；预训练对齐后再解冻 LLM，用高质量图像-描述对做 SFT，描述的详细程度与准确性显著改善。
@@ -505,7 +505,7 @@ GRPO 的“相对”来自同一 prompt 的组内比较；PPO 中的 `old_policy
 > **实验 8-11 ★★：GeneralPoints——单轮 RL 的 “记忆与泛化” 对照**
 >
 >
-> ![图8-12 GeneralPoints 实验架构（GP-L 与 GP-VL 两个变体的训练与测试设计）](/images/ai-agents-in-depth/fig8-12.svg)
+![图8-12 GeneralPoints 实验架构（GP-L 与 GP-VL 两个变体的训练与测试设计）](/images/ai-agents-in-depth/fig8-12.svg)
 >
 >
 > GeneralPoints 是 Chu 等人提出的算术思考卡牌游戏[^ch8-3]，专门用于评估模型的泛化能力。任务目标类似“24 点”游戏：使用四张卡牌上的数字，通过加减乘除运算，每个数字恰好用一次，凑出目标数字 24。实验设计了纯文本 GP-L 与图像 GP-VL 两个变体，使我们能在同一框架下分别考察规则泛化与视觉泛化。
@@ -636,7 +636,7 @@ Search-R1[^ch8-25]代表检索增强路线：模型自主决定何时搜索、�
 
 > **实验 8-14 ★★★：ReTool——代码解释器增强数学解题**
 >
-> ![图8-17 ReTool 交织文本-代码思考与沙盒执行反馈循环](/images/ai-agents-in-depth/fig8-17.svg)
+![图8-17 ReTool 交织文本-代码思考与沙盒执行反馈循环](/images/ai-agents-in-depth/fig8-17.svg)
 >
 > ReTool 在 SFT 预热后，用交织的文本思考、代码执行和解释器反馈进行 PPO 训练。它展示了工具反馈如何改变思考策略：模型逐渐学会主动执行、读取错误并自我修正。训练数据来自 DAPO-Math-17k，但优化算法仍是标准 PPO[^ch8-26][^ch8-27]。
 >
@@ -644,7 +644,7 @@ Search-R1[^ch8-25]代表检索增强路线：模型自主决定何时搜索、�
 
 > **实验 8-15 ★★★：AWorld-train——在沙盒中学习使用工具**
 >
-> ![图8-18 AWorld-train MCP 沙盒训练架构与工具生态](/images/ai-agents-in-depth/fig8-18.svg)
+![图8-18 AWorld-train MCP 沙盒训练架构与工具生态](/images/ai-agents-in-depth/fig8-18.svg)
 >
 > AWorld-train 使用 MCP 服务器沙盒，提供 Web、文档、多媒体、代码和知识检索等工具。这个开放式实验的重点不是刷新 GAIA 指标，而是跑通可重置、可重放的多工具训练链路，并观察工具调用成功率和组合策略是否随训练改善。
 

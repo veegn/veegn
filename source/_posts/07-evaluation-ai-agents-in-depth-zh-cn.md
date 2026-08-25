@@ -241,7 +241,7 @@ Verifiers 引入了层次化的环境设计：`SingleTurnEnv` 适用于单轮任
 >
 > 深入阅读任务定义文件：每个任务包含已知信息（用户的背景知识）、任务指令（指导如何渐进式透露信息和响应策略）以及成功条件（数据库目标状态和对话中必须出现的确认信息）。运行完整评估流程，观察用户模拟器与 Agent 的多轮对话，分析典型的失败模式（政策违规、信息遗漏、过度转接人工等）。
 >
-> ![图7-3 τ²-bench 评估架构](/images/ai-agents-in-depth/fig7-3.svg)
+![图7-3 τ²-bench 评估架构](/images/ai-agents-in-depth/fig7-3.svg)
 >
 > 对比 τ-bench 与 τ²-bench 的设计差异：τ-bench 初始版本的用户指令过于简单（Agent 能猜对答案）、成功条件不够精确（导致误判）、用户模拟器过于机械。τ²-bench 针对这些问题做了系统性改进：
 >
@@ -860,7 +860,7 @@ Agent 产品需要从第一天就设计特性开关（Feature Flag）基础设�
 > 搭建机器人操作的仿真环境。阅读 `ch7/SimpleVLA-RL` 和 OpenVLA 文档，理解视觉-语言-动作模型的架构（视觉编码器 + 语言模型 + 动作解码器端到端整合，图像和文本投影到共享语义空间）。配置 RoboTwin2 环境，理解观测空间（三视角 RGB + 14 维关节状态）和动作空间（14 维控制向量）。研究 move_can_pot 中的环境随机化机制和空间约束逻辑。运行预训练模型评估，记录成功率、完成时间和失败模式，重点关注动作分块机制的影响。
 >
 >
-> ![图7-9 OpenVLA 与 RoboTwin2 具身智能环境](/images/ai-agents-in-depth/fig7-9.svg)
+![图7-9 OpenVLA 与 RoboTwin2 具身智能环境](/images/ai-agents-in-depth/fig7-9.svg)
 >
 >
 

@@ -355,7 +355,7 @@ RAG 的核心流程是：**检索相关片段 → 注入上下文 → LLM 基于
 > `dense-embedding` 项目的重点不在于实现本身，而在于对比：它提供了 ANNOY 和 HNSW 两种可切换的后端，让你直接观察两类主流 ANN（Approximate Nearest Neighbor，近似最近邻）算法在实践中的区别。所谓 ANN，是指在海量向量中快速找到与查询向量最接近的那些向量的算法——当知识库有上百万条文档时，逐一计算相似度太慢，ANN 通过巧妙的索引结构实现近似但极快的查找。
 >
 >
-> ![图3-7 HNSW 索引结构](/images/ai-agents-in-depth/fig3-7.svg)
+![图3-7 HNSW 索引结构](/images/ai-agents-in-depth/fig3-7.svg)
 >
 >
 > 两种算法各有优劣，表3-2 从构建速度、内存占用、增量更新、查询精度和适用场景五个维度进行对比：

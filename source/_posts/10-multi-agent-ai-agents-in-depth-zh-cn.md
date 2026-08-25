@@ -388,7 +388,7 @@ Manager 按顺序依次调用专门 Agent，每个 Agent 完成后返回结果�
 > 4. 对比单 Agent vs 管理者模式在翻译质量、执行效率、资源消耗方面的差异
 >
 >
-> ![图10-5 书籍翻译 Agent 架构](/images/ai-agents-in-depth/fig10-5.svg)
+![图10-5 书籍翻译 Agent 架构](/images/ai-agents-in-depth/fig10-5.svg)
 >
 >
 
@@ -434,7 +434,7 @@ Manager 按顺序依次调用专门 Agent，每个 Agent 完成后返回结果�
 > 4. 记录消息时序、自主启动决策、延迟、成功率和资源消耗，并比较两种模式。
 >
 >
-> ![图10-7 Phone 与 Computer 双 Agent 架构](/images/ai-agents-in-depth/fig10-7.svg)
+![图10-7 Phone 与 Computer 双 Agent 架构](/images/ai-agents-in-depth/fig10-7.svg)
 
 > **实验 10-4 ★★★：同时从多个网站搜集信息的 Agent**
 >
@@ -465,7 +465,7 @@ Manager 按顺序依次调用专门 Agent，每个 Agent 完成后返回结果�
 > 6. 记录和对比并行执行与串行执行的时间差异，验证并行化带来的性能提升
 >
 >
-> ![图10-8 并行 Web Scraping 架构](/images/ai-agents-in-depth/fig10-8.svg)
+![图10-8 并行 Web Scraping 架构](/images/ai-agents-in-depth/fig10-8.svg)
 >
 >
 
@@ -501,7 +501,7 @@ MetaGPT 真正对去中心化通信的贡献，在于它的信息传递机制：
 
 需要如实说明的是，MetaGPT 在**控制流**上并不是去中心化的——角色顺序由 SOP 预先固定，整体更接近一条流水线（用第一章的语言说是工作流）。它被放在本节讨论，是因为消息池加订阅的通信机制展示了去中心化系统最关键的设计要素：解耦。至于“QA 直接找 Product Manager 澄清需求”“Engineer 找 Architect 讨论替代方案”这类多向动态反馈，是对这一架构的自然扩展设想，原版 MetaGPT 并未实现。
 
-**AutoGen 群聊。** 
+**AutoGen 群聊。**
 
 AutoGen 的群聊（group chat）让多个 Agent 参与同一场会话：每轮由一个 “发言者选择器” 决定下一个发言的 Agent。选择器可以是简单的轮转规则，也可以是一个 LLM 根据当前对话内容判断谁最适合接话；任何 Agent 的发言对所有参与者可见。它并不是完全去中心化的系统：发言者的选择由一个中心化的 GroupChatManager 统一裁决，而 “轮到谁发言” 本身就是一种控制流决策。它是 “共享对话记录 + 中心化调度”的混合形态，所有 Agent 看到同一份公共对话记录，但各自保有独立的系统提示词和工具集，而调度权集中在选择器手里。
 
@@ -736,7 +736,7 @@ Pinchwork 和 RentAHuman 共同代表了**基于市场机制的协调方式**—
 > - 游戏结束时能正确判断胜负
 >
 >
-> ![图10-11 语音狼人杀 Agent 系统](/images/ai-agents-in-depth/fig10-11.svg)
+![图10-11 语音狼人杀 Agent 系统](/images/ai-agents-in-depth/fig10-11.svg)
 >
 >
 
