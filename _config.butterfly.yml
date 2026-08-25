@@ -53,7 +53,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /img/site-icon.svg
 
 avatar:
   img: https://www.gravatar.com/avatar/6078335016c968f9216120197992780e?s=256&d=identicon
