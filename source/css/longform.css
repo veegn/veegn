@@ -1,4 +1,13 @@
 :root {
+  --veegn-ink: #171923;
+  --veegn-muted: #707784;
+  --veegn-surface: #f7f8fa;
+  --veegn-surface-raised: #ffffff;
+  --veegn-border: #e2e4ea;
+  --veegn-accent: #5e6ad2;
+  --veegn-accent-strong: #4652b8;
+  --veegn-dark-surface: #0b1020;
+  --veegn-dark-raised: #12182a;
   --veegn-ui-font: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
   --veegn-reading-font: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", "SimSun", Georgia, serif;
   --veegn-code-font: "SFMono-Regular", "Cascadia Code", "JetBrains Mono", "Noto Sans Mono", Consolas, monospace;
@@ -16,6 +25,48 @@ select,
 textarea {
   font-family: var(--veegn-ui-font);
   font-synthesis: none;
+}
+
+body {
+  color: var(--veegn-ink);
+  background: var(--veegn-surface);
+}
+
+#page-header,
+#footer {
+  background-color: var(--veegn-dark-surface);
+}
+
+a {
+  color: var(--veegn-accent-strong);
+}
+
+a:hover {
+  color: var(--veegn-accent);
+}
+
+::selection {
+  color: var(--veegn-ink);
+  background: #dde2ff;
+}
+
+[data-theme='dark'] body {
+  color: #e7e9ef;
+  background: var(--veegn-dark-surface);
+}
+
+[data-theme='dark'] #page,
+[data-theme='dark'] .card-widget,
+[data-theme='dark'] #post {
+  background: var(--veegn-dark-raised);
+}
+
+[data-theme='dark'] a {
+  color: #aeb6ff;
+}
+
+[data-theme='dark'] a:hover {
+  color: #c9ceff;
 }
 
 #content-inner,
@@ -65,7 +116,8 @@ textarea {
 #post #article-container blockquote {
   margin: 1.6em 0;
   padding: 0.8em 1.2em;
-  border-left-width: 3px;
+  border-left: 3px solid var(--veegn-accent);
+  background: #f2f3ff;
   line-height: 1.9;
 }
 
@@ -94,7 +146,18 @@ textarea {
 
 #post #article-container pre {
   line-height: 1.65;
+  border: 1px solid var(--veegn-border);
   border-radius: 8px;
+  background: #f3f4f8;
+}
+
+[data-theme='dark'] #post #article-container blockquote {
+  background: #171d33;
+}
+
+[data-theme='dark'] #post #article-container pre {
+  border-color: #29314a;
+  background: #0f1527;
 }
 
 @media (max-width: 768px) {
@@ -109,7 +172,6 @@ textarea {
   #post #article-container h2 { font-size: 1.35em; }
 }
 
-/* Read mode: narrow the text measure and remove surrounding distractions. */
 .read-mode #page,
 .read-mode #content-inner {
   max-width: 900px;
@@ -121,11 +183,8 @@ textarea {
   display: none;
 }
 
-.read-mode #post #article-container {
-  max-width: 820px;
-}
+.read-mode #post #article-container { max-width: 820px; }
 
-/* Series navigation remains UI-like and easy to scan. */
 #article-container a[href*="ai-agents-in-depth-zh-cn"] {
   font-family: var(--veegn-ui-font);
 }
